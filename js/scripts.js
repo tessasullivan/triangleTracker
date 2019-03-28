@@ -10,7 +10,11 @@ $(document).ready(function() {
       } else if (sideA === sideB || sideA === sideC || sideB === sideC){
         $("#output").append("This is an isoceles triangle.");
       } else {
-        $("#output").append("Not");
+        if (sideA + sideB <= sideC || sideA + sideC <= sideB || sideB + sideC <= sideA){
+          $("#output").append("This is a scalene triangle");
+        } else {
+          $("#output").append("These values do not make up a triangle");
+        }
       }
     } else {
       //User left a field blank
