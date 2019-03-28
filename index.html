@@ -6,42 +6,28 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Celebrity Dating Quiz</title>
+    <title>Triangle Tracker</title>
   </head>
   <body>
     <div class="container">
-      <form id="quiz">
-        <h1>Find your perfect mate!</h1>
+      <form id="triangle">
+        <h1>Triangle Tracker</h1>
         <div class="form-group">
-          <label for="age">Age</label>
-          <input id="age" class="form-control" type="text">
+          <label for="sideA">A</label>
+          <input id="sideA" class="form-control" type="text">
         </div>
         <div class="form-group">
-          <label for="sex"></label>
-          <select class="form-control" id="sex">
-            <option>Male</option>
-            <option>Female</option>
-          </select>
+          <label for="sideB">B</label>
+          <input id="sideB" class="form-control" type="text">
         </div>
         <div class="form-group">
-          <label for="orientation"></label>
-          <select class="form-control" id="orientation">
-            <option>Straight</option>
-            <option>Gay</option>
-            <option>Bi</option>
-          </select>
+          <label for="sideC">C</label>
+          <input id="sideC" class="form-control" type="text">
         </div>
         <button type="submit" class="btn btn-info">Submit</button>
-        <!-- <div class="form-group">
-          <label for="favorite-animal">Favorite Animal</label>
-          <select class="form-control" id="favorite-animal">
-            <option>Cat</option>
-            <option>Dog</option>
-            <option>Snake</option>
-          </select>
-        </div> -->
+
       </form>
-      <div id="match">
+      <div id="output">
       </div>
     </div>
   </body>
