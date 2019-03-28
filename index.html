@@ -6,22 +6,42 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Voting Information</title>
+    <title>Celebrity Dating Quiz</title>
   </head>
   <body>
     <div class="container">
-      <form id="voting">
+      <form id="quiz">
+        <h1>Find your perfect mate!</h1>
         <div class="form-group">
-          <label for="age">How old are you?</label>
+          <label for="age">Age</label>
           <input id="age" class="form-control" type="text">
         </div>
-        <button type="submit"class="btn btn-info" id="answer">Submit</button>
+        <div class="form-group">
+          <label for="sex"></label>
+          <select class="form-control" id="sex">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="orientation"></label>
+          <select class="form-control" id="orientation">
+            <option>Straight</option>
+            <option>Gay</option>
+            <option>Bi</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-info">Submit</button>
+        <!-- <div class="form-group">
+          <label for="favorite-animal">Favorite Animal</label>
+          <select class="form-control" id="favorite-animal">
+            <option>Cat</option>
+            <option>Dog</option>
+            <option>Snake</option>
+          </select>
+        </div> -->
       </form>
-      <div id="canvote">
-        <p>You can vote</p>
-      </div>
-      <div id="cantvote">
-        <p>You can't vote</p>
+      <div id="match">
       </div>
     </div>
   </body>
