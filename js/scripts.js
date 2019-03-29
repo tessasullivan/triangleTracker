@@ -3,7 +3,7 @@ function matchTriangle (sideA, sideB, sideC) {
   if (sideA === sideB && sideB === sideC) {
     outputString = "This is an equilatoral triangle.";
   } else if (sideA === sideB || sideA === sideC || sideB === sideC){
-    outputString = "This is an isoceles triangle.";
+    outputString = "This is an isosceles triangle.";
   } else {
     if (sideA + sideB <= sideC || sideA + sideC <= sideB || sideB + sideC <= sideA){
     outputString = "This is a scalene triangle";
